@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>headerLinks}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    Order here
+    <form action="/order" method="POST">
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="shopId" placeholder="Enter shop Id">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="quantity" placeholder="Enter Quantity">
+        </div>
+        <input type="submit" class="btn btnRegister btn-primary" value="Register">
+    </form>
+</body>
+</html>
